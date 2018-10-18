@@ -28,13 +28,6 @@ I can link directly to my [about page](about.html).
 
 ###I can add code
 
-```{r}
-library(tidyverse)
-
-tibble(
-  x = 1:10,
-  y = x+2
-)
-```
+My code page is [here](code.html)
 
 
