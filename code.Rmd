@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Code"
 ---
 
 ###I can add code
@@ -9,6 +9,6 @@ library(tidyverse)
 
 tibble(
   x = 1:10,
-  y = x+2
+  y = x + 2
 )
 ```
