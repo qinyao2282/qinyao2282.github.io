@@ -24,3 +24,17 @@ I can link directly to my [about page](about.html).
 ###Picture
 
 <img src="image/1.png" style="width:75%">
+
+
+###I can add code
+
+```{r}
+library(tidyverse)
+
+tibble(
+  x = 1:10,
+  y = x+2
+)
+```
+
+
