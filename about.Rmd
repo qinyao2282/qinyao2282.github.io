@@ -4,6 +4,8 @@ title: "About"
 
 ### About this site
 
+Hi, this is a page for introductory to Qinyao Wu. You can find my emails and my github page here, as well as my previous education and professional experiences and my resume. 
+
 Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
 
 If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
