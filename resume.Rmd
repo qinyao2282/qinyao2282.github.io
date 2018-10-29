@@ -1,0 +1,79 @@
+---
+title: "Resume"
+output: 
+  html_document:
+      toc: true
+      toc_float: true
+---
+
+### EDUCATION
+
+COLUMBIA UNIVERSITY, MAILMAN SCHOOL OF PUBLIC HEALTH, New York, NY 
+
+Expected graduation: May 2020
+
+Master of Science in Biostatistics
+
+Relevant coursework: Data Science, Biostatistical Methods, Epidemiology, Probability, Computer Graphics, Data Analysis and Statistics Workshop, Advanced Programming Techniques, Scientific Data Processing in Matlab, Multi-Variable Calculus, Biostatistics
+
+BRANDEIS UNIVERSITY, Waltham, MA                                      May 2014
+
+Bachelor of Art in Biology   GPA:3.64, Cum Laude recipient   
+
+### EXPERIENCE
+
+Intern, [Shanghai Rhighton Biotechnology Co.](http://www.rightongene.com), Shanghai, China   June - August 2017
+
+* Liaised between Rhighton and its partners to arrange the preservation of original samples and delivery of final reports
+
+* Collaborated with 4 lead-scientists in RT-PCR and Q-PCR and other DNA extraction and purification
+
+* Supported with genetic analysis and gene sequence interpretation by collecting information from the sequencing procedure
+
+Data Analyst, [Brandeis University](https://www.brandeis.edu), Waltham. MA.                                             January - August 2017
+
+* Participated in Brandeis brainwave student club and recruited 30 undergraduate students to join the research on brainwave difference between when people are relaxed and when people feel stressed out
+
+* Designed survey and collected data for over 100 trials using Matlab and Qualtrics
+
+* Co-analyzed data collected using Matlab toolboxes and numerical algorithms created by Matlab programming language
+
+Research Assistant, [Soochow University](http://www.suda.edu.cn), Suzhou, China                                          May - August 2016
+
+* Applied immunofluorescence technique to visualize the target cells and traced the bio-markers
+
+* Performed flow cytometry to do cell sorting and cell counting
+
+*Conducted peripheral blood mononuclear cell(PBMC) isolation and preservation for future studies
+
+*Conducted RNA extraction and purification and amplified the RNA fragments using RT-PCR
+
+Lab Assistant, [The First People’s Hospital of Changzhou](https://www.chinaorganharvest.org/hospitals/the-first-peoples-hospital-of-changzhou/), Changzhou, China     		               June - August 2015
+
+* Communicated with at least 100 patients per week about needs and guided them into corresponding departments
+
+* Conducted DNA extraction to check the tumor markers and formed reports with others
+
+### VOLUNTEER EXPERIENCE
+
+[Global Brigades](https://www.globalbrigades.org), Public Health Chapter, Tegucigalpa, Honduras                              September - January 2016
+
+* Planned fundraising event for project funding, resulting in 350 dollars of donation 
+
+* Managed build up a sustainable hygiene station and sanitation projects with water pipes set up for a family
+
+* Helped cover floor with cement to prevent endemic infectious diseases such as Dengue fever
+
+* Gave lectures on the importance of public health and distributed hygiene kits to children at school and their families
+
+###SKILLS   
+
+* Proficient in Microsoft Office programs (MS Word, Excel, PowerPoint, Outlook)
+
+* Working knowledge of R, Matlab, Java, and Python
+
+* Proficient in Research skills (immunofluorescence, Q-PCR, RT-PCR, DNA and RNA extraction and purification)
+
+* Fluent in Chinese
+
+

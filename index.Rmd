@@ -8,12 +8,7 @@ output:
 
 ### I have a webpage!
 
-And I can put all kinds of stuff on it!
-
-I can add additional text.
-
-I *could* write some code but I'm not going to. 
-
+Welcome to this webpage! This is a website to introduce Qinyao Wu's 
 
 ###Add some links
 
@@ -35,3 +30,5 @@ I can link directly to my [about page](about.html).
 My code page is [here](code.html)
 
 
+###Resume
+My resume page is [here](resume.html)
