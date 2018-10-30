@@ -7,6 +7,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+
+library(p8105.datasets)
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
@@ -23,24 +25,30 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(boro = neighbourhood_group, neighbourhood, rating, price, room_type,
-         latitude, longitude) %>%
-  filter(!is.na(rating), 
-         boro == "Manhattan",
-         room_type == "Entire home/apt",
-         price %in% 100:500)  %>% 
+
+set.seed(1)
+
+data(instacart)
+
+instacart = instacart %>%
   sample_n(5000)
 
-nyc_airbnb %>%
-  mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
-  plot_ly(x = ~longitude, y = ~latitude, type = "scatter", mode = "markers",
-          alpha = 0.5, #different types of the scatter
-          text = ~text_label,
-          color = ~price)
+instacart %>%
+  group_by(department, aisle) %>% 
+  summarize(n = n()) %>% 
+  mutate(aisle = forcats::fct_reorder(factor(aisle), n, .desc = F)) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~department, type = "bar")
+  
+  
+  ggplot(aes(x = aisle, y = n, fill = department)) +
+  
+  geom_bar(stat = "identity") +
+  theme(text = element_text(size = 6), axis.text.x = element_text(angle = 90, hjust = 1)) + 
+  labs(
+    title = "Aisle Oder number distribution plot",
+    x = "Aisle ID",
+    y = "Number of orders placed"
+  ) 
 ```
 
 Column {data-width=350}
@@ -49,12 +57,22 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+instacart %>% 
+  group_by(aisle) %>% 
+  summarize(interval = mean(days_since_prior_order)) %>% 
+  mutate(aisle = forcats::fct_reorder(factor(aisle), interval, .desc = F)) %>%
+  plot_ly(x = ~aisle, y = ~interval, type = "bar",
+          colors = "Set2") %>%
+  layout(
+    title = "Intervals between Orders for Each Aisle",
+    scene = list(
+      xaxis = list(title = "Aisle"),
+      yaxis = list(title = "Interval")
+    ))
 ```
 
 ### Chart C
 
 ```{r}
-
 ```
 

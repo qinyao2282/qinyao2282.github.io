@@ -25,10 +25,9 @@ I can link directly to my [about page](about.html).
 <img src="image/1.png" style="width:75%">
 
 
-###I can add code
-
-My code page is [here](code.html)
-
-
 ###Resume
 My resume page is [here](resume.html)
+
+###Dashiboard
+My dashboard for problem 2 is [here](dashboard_template.html)
+
