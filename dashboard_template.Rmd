@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -22,7 +22,7 @@ library(plotly)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Aisle v.s. Order Number
 
 ```{r}
 
@@ -37,24 +37,24 @@ instacart %>%
   group_by(department, aisle) %>% 
   summarize(n = n()) %>% 
   mutate(aisle = forcats::fct_reorder(factor(aisle), n, .desc = F)) %>% 
-  plot_ly(x = ~aisle, y = ~n, color = ~department, type = "bar")
+  plot_ly(x = ~aisle, y = ~n, color = ~department, type = "bar") %>%
+  layout(
+    title = "Number of Order in Each Aisle",
+    scene = list(
+      xaxis = list(title = "Aisle"),
+      yaxis = list(title = "Interval")
+    ))
   
   
-  ggplot(aes(x = aisle, y = n, fill = department)) +
   
-  geom_bar(stat = "identity") +
-  theme(text = element_text(size = 6), axis.text.x = element_text(angle = 90, hjust = 1)) + 
-  labs(
-    title = "Aisle Oder number distribution plot",
-    x = "Aisle ID",
-    y = "Number of orders placed"
-  ) 
 ```
+
+
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Interval between Orders for Each Aisle
 
 ```{r}
 instacart %>% 
@@ -71,8 +71,20 @@ instacart %>%
     ))
 ```
 
-### Chart C
+### Order Hour For Different Department
 
 ```{r}
+instacart %>% 
+  group_by(department) %>% 
+  plot_ly(x = ~department, y = ~order_hour_of_day, color = ~department, type = "box", colors = "Set2") %>%
+  layout(
+    title = "Order Hour For Different Department",
+    scene = list(
+      xaxis = list(title = "Departments"),
+      yaxis = list(title = "Order Hour")
+    ))
+
+
+
 ```
 

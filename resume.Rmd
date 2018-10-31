@@ -8,7 +8,7 @@ output:
 
 ### EDUCATION
 
-*COLUMBIA UNIVERSITY*, MAILMAN SCHOOL OF PUBLIC HEALTH, New York, NY 
+####*COLUMBIA UNIVERSITY*, MAILMAN SCHOOL OF PUBLIC HEALTH, New York, NY 
 
 Expected graduation: May 2020
 
@@ -16,7 +16,7 @@ Master of Science in Biostatistics
 
 Relevant coursework: Data Science, Biostatistical Methods, Epidemiology, Probability, Computer Graphics, Data Analysis and Statistics Workshop, Advanced Programming Techniques, Scientific Data Processing in Matlab, Multi-Variable Calculus, Biostatistics
 
-BRANDEIS UNIVERSITY, Waltham, MA                                      May 2014
+####*BRANDEIS UNIVERSITY*, Waltham, MA                        May 2014
 
 Bachelor of Art in Biology   GPA:3.64, Cum Laude recipient   
 
@@ -70,7 +70,7 @@ Lab Assistant, [The First People’s Hospital of Changzhou](https://www.chinaorg
 
 * Proficient in Microsoft Office programs (MS Word, Excel, PowerPoint, Outlook)
 
-* Working knowledge of R, Matlab, Java, and Python
+* Working knowledge of *R, Matlab, Java, and Python*
 
 * Proficient in Research skills (immunofluorescence, Q-PCR, RT-PCR, DNA and RNA extraction and purification)
 

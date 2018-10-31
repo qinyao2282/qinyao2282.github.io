@@ -1,33 +1,28 @@
 ---
-title: "Holy cow!"
+title: "Welcome to this page!"
 output: 
   html_document:
       toc: true
       toc_float: true
 ---
 
-### I have a webpage!
+###Introduction
 
-Welcome to this webpage! This is a website to introduce Qinyao Wu's 
+Welcome to this page! This page is a personal page for Qinyao Wu!
 
-###Add some links
+I am currently a Master of Science student in Biostatistics at Mailman School of Public Health. 
 
-I like [google](https://www.google.com)
+<img src="image/mailman.png" style="width:75%">
 
-I like [to look for code on the internet](https://www.google.com).
+I spent last four years at Brandeis University in MA for my undergraduate education. I graduated from Brandeis this summer with a Bachelor of Art degree in Biology. 
 
-I can link directly to my [about page](about.html).
-
-
-
-###Picture
-
-<img src="image/1.png" style="width:75%">
+<img src="image/brandeis.jpg" style="width:75%">
 
 
 ###Resume
-My resume page is [here](resume.html)
+You can find my resume [here](resume.html).
 
-###Dashiboard
-My dashboard for problem 2 is [here](dashboard_template.html)
+###Dashboard
+My dashboard for the instacart data is [here](dashboard_template.html).
 
+The figures in Dashboard depicts the data of instacart. The first figure gives the number of orders for each aisle. And the second plot gives the intervals between this order and last order for each aisle so that we can observe the freqency of need of customers. And the third figure gives the order hour in each day for different department. 
