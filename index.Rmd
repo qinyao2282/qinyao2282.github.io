@@ -1,5 +1,5 @@
 ---
-title: "Welcome to this page!"
+title: "Welcome to Qinyao's page!"
 output: 
   html_document:
       toc: true
@@ -7,6 +7,8 @@ output:
 ---
 
 ###Introduction
+
+<img src="image/giphy.gif" style="width:75%">
 
 Welcome to this page! This page is a personal page for Qinyao Wu!
 

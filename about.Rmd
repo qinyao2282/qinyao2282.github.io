@@ -9,3 +9,5 @@ Hi, this is a page for introductory to Qinyao Wu. You can find my emails and my 
 
 ###About the data set
 The data set of instacart is from the online grocery, which allows people to shop online. The data set contains a lot of observations, 5000 observations were abstracted randomly. 
+
+<img src="image/instacart.png" style="width:75%">
