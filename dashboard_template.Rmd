@@ -7,12 +7,12 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+## Loading required packages
 
 library(p8105.datasets)
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
-## Loading required package: viridisLite
 library(p8105.datasets)
 
 library(plotly)
@@ -25,18 +25,23 @@ Column {data-width=650}
 ### Aisle v.s. Order Number
 
 ```{r}
-
+#Set the seed to make every sample the same
 set.seed(1)
 
+#Read the dataset
 data(instacart)
 
+#Because the dataset is too big, only read 5000 observations. 
 instacart = instacart %>%
   sample_n(5000)
 
+#Group the dataset by department and draw the orders in each aisle. 
 instacart %>%
   group_by(department, aisle) %>% 
   summarize(n = n()) %>% 
   mutate(aisle = forcats::fct_reorder(factor(aisle), n, .desc = F)) %>% 
+  
+  #Use plotly. 
   plot_ly(x = ~aisle, y = ~n, color = ~department, type = "bar") %>%
   layout(
     title = "Number of Order in Each Aisle",
@@ -57,6 +62,8 @@ Column {data-width=350}
 ### Interval between Orders for Each Aisle
 
 ```{r}
+
+#Draw the intervals bettwen orders for each aisle. 
 instacart %>% 
   group_by(aisle) %>% 
   summarize(interval = mean(days_since_prior_order)) %>% 
@@ -74,6 +81,7 @@ instacart %>%
 ### Order Hour For Different Department
 
 ```{r}
+#Draw the average order hour for each department. 
 instacart %>% 
   group_by(department) %>% 
   plot_ly(x = ~department, y = ~order_hour_of_day, color = ~department, type = "box", colors = "Set2") %>%
