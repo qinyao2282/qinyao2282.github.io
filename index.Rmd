@@ -29,3 +29,14 @@ You can find my resume [here](resume.html).
 My dashboard for the instacart data is [here](dashboard_template.html).
 
 The figures in Dashboard depicts the data of instacart. The first figure gives the number of orders for each aisle. And the second plot gives the intervals between this order and last order for each aisle so that we can observe the freqency of need of customers. And the third figure gives the order hour in each day for different department. 
+
+<img src="image/instacart.png" style="width:75%">
+
+###Contact Info
+Qinyao Wu
+
+915 West End Avenue, Apt 1006
+
+New York, NY, 10025
+
+Phone: 646-416-0677

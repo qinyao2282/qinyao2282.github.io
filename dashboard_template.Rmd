@@ -35,22 +35,19 @@ data(instacart)
 instacart = instacart %>%
   sample_n(5000)
 
-#Group the dataset by department and draw the orders in each aisle. 
-instacart %>%
-  group_by(department, aisle) %>% 
-  summarize(n = n()) %>% 
-  mutate(aisle = forcats::fct_reorder(factor(aisle), n, .desc = F)) %>% 
-  
-  #Use plotly. 
-  plot_ly(x = ~aisle, y = ~n, color = ~department, type = "bar") %>%
+ #Draw the intervals bettwen orders for each aisle.  
+instacart %>% 
+  group_by(aisle) %>% 
+  summarize(interval = mean(days_since_prior_order)) %>% 
+  mutate(aisle = forcats::fct_reorder(factor(aisle), interval, .desc = F)) %>%
+  plot_ly(x = ~aisle, y = ~interval, type = "bar",
+          colors = "Set2") %>%
   layout(
-    title = "Number of Order in Each Aisle",
+    title = "Intervals between Orders for Each Aisle",
     scene = list(
       xaxis = list(title = "Aisle"),
       yaxis = list(title = "Interval")
-    ))
-  
-  
+    ))  
   
 ```
 
@@ -63,15 +60,16 @@ Column {data-width=350}
 
 ```{r}
 
-#Draw the intervals bettwen orders for each aisle. 
-instacart %>% 
-  group_by(aisle) %>% 
-  summarize(interval = mean(days_since_prior_order)) %>% 
-  mutate(aisle = forcats::fct_reorder(factor(aisle), interval, .desc = F)) %>%
-  plot_ly(x = ~aisle, y = ~interval, type = "bar",
-          colors = "Set2") %>%
+#Group the dataset by department and draw the orders in each aisle. 
+instacart %>%
+  group_by(department, aisle) %>% 
+  summarize(n = n()) %>% 
+  mutate(aisle = forcats::fct_reorder(factor(aisle), n, .desc = F)) %>% 
+  
+  #Use plotly. 
+  plot_ly(x = ~aisle, y = ~n, color = ~department, type = "scatter", mode = "markers") %>%
   layout(
-    title = "Intervals between Orders for Each Aisle",
+    title = "Number of Order in Each Aisle",
     scene = list(
       xaxis = list(title = "Aisle"),
       yaxis = list(title = "Interval")
@@ -81,7 +79,7 @@ instacart %>%
 ### Order Hour For Different Department
 
 ```{r}
-#Draw the average order hour for each department. 
+#Draw the average order hour for each department.
 instacart %>% 
   group_by(department) %>% 
   plot_ly(x = ~department, y = ~order_hour_of_day, color = ~department, type = "box", colors = "Set2") %>%
